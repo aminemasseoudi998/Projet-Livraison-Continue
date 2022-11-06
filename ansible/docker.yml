@@ -1,0 +1,6 @@
+---
+     - hosts: localhost 
+       gather facts: true 
+       become: true
+       roles:
+         - {  role : docker  }   
