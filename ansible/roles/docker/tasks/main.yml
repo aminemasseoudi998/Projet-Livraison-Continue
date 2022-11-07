@@ -1,6 +1,6 @@
 ---
-# tasks file for docker
-     - name : create_image_docker 
+#tasks file for docker
+     - name : create image docker 
        docker_image :    
         name : devops 
         build : 
