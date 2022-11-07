@@ -5,5 +5,5 @@ localhost
 
 [server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= linux2
+ansi_user= amine-virtual-machine
 
