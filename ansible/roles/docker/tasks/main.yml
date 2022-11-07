@@ -2,9 +2,9 @@
 #tasks file for docker
      - name : create image docker 
        docker_image :    
-        name : devops 
+        name : Livraison-Continue
         build : 
-        path : /var/lib/Jenkins/workspace/devops
+        path : /var/lib/jenkins/workspace/Livraison-Continue
         pull : no 
         source : build 
         state : present 
@@ -12,7 +12,7 @@
      - name : run  container  docker 
        docker_container : 
         name : myapp_container 
-        image : devops:latest
+        image : Livraison-Continue:latest
         state : started 
         recreate : true 
         ports : 
