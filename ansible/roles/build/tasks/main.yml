@@ -2,5 +2,4 @@
 # tasks file for build
                   
                  - name : build app 
-                   shell : np install
-                   shell : ng build --prod
+                   shell : ng build 
