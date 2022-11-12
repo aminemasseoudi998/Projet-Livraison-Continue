@@ -4,8 +4,8 @@
        docker_image :    
         name : Livraison-Continue
         build : 
-        path : "/var/lib/jenkins/workspace/Livraison-Continue"
-        pull : true
+        path : /var/lib/jenkins/workspace/Livraison-Continue
+        pull : no
         source : build 
         state : present 
         force_source : true 
