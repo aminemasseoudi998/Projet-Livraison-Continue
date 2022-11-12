@@ -8,7 +8,7 @@ pipeline {
             steps{
               
                 git branch: 'main', 
-                credentialsId: 'd4ed5b79-563e-4d2b-b047-fc679b4a04ca', 
+                credentialsId: '914985b2-d510-4219-a8c0-03b722691da1', 
                 url: 'https://github.com/aminemasseoudi998/Projet-Livraison-Continue.git'
                     
                 }
