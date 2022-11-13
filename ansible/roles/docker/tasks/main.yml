@@ -12,7 +12,7 @@
      - name : run  container  docker 
        docker_container : 
         name : myapp_container 
-        image : Livraison-Continue:latest
+        image : livraison-continue:latest
         state : started 
         recreate : true 
         ports : 
