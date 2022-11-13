@@ -2,7 +2,7 @@
 #tasks file for docker
      - name: create image docker 
        docker_image :    
-        name : Livraison-Continue
+        name : livraison-continue
         build : 
         path : /var/lib/jenkins/workspace/Livraison-Continue@tmp
         pull : no
