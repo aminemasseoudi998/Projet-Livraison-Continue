@@ -8,7 +8,7 @@ pipeline {
             steps{
               
                 git branch: 'main', 
-                credentialsId: '914985b2-d510-4219-a8c0-03b722691da1', 
+                credentialsId: 'aminetoken', 
                 url: 'https://github.com/aminemasseoudi998/Projet-Livraison-Continue.git'
                     
                 }
@@ -16,6 +16,9 @@ pipeline {
             }
       
          stage("Build"){
+           agent {
+                label 'docker'
+		           	}
             steps{
               
               script {
@@ -26,6 +29,9 @@ pipeline {
       
       
           stage("Docker"){
+            agent {
+		          	label 'docker'
+			            }
             steps{
               
             
@@ -34,6 +40,9 @@ pipeline {
             }
          }
        stage('docker-registry'){
+                         agent {
+		                     	label 'docker'
+		                           	}
             steps{
                 script{
                     sh "ansible-playbook ansible/docker-registry.yml -i ansible/inventory/host.yml "
