@@ -1,6 +1,6 @@
 ---
 
-- hosts: localhost
+- hosts: 192.168.1.30
   gather_facts: true
   become: true
   roles:
